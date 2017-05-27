@@ -147,10 +147,51 @@
                 "enum": [
                   "slot"
                 ]
+              },
+              "value": {
+                "type": "integer",
+                "description": "The value of the modifier."
+              },
+              "revoke": {
+                "type": "boolean",
+                "description": "Indicates whether all (i.e. unknown number of) instances of the slot type are revoked."
               }
             },
             "required": [
+              "value",
               "name",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "description": "The modifier granted by this upgrade (slot choice).",
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "This upgrade grants a slot choice.",
+                "enum": [
+                  "slotChoice"
+                ]
+              },
+              "value": {
+                "type": "integer",
+                "description": "The number of choices that can be selected."
+              },
+              "choice": {
+                "type": "array",
+                "description": "The list of slot choices.",
+                "uniqueItems": false,
+                "items": {
+                  "description": "A slot choice.",
+                  "$ref": "definitions.json#/definitions/slot"
+                }
+              }
+            },
+            "required": [
+              "value",
+              "choice",
               "type"
             ],
             "additionalProperties": false

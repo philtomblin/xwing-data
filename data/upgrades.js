@@ -716,7 +716,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Elite"
+        "name": "Elite",
+        "value": 1
       }
     ]
   },
@@ -1164,7 +1165,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Bomb"
+        "name": "Bomb",
+        "value": 1
       }
     ]
   },
@@ -1594,7 +1596,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Torpedo"
+        "name": "Torpedo",
+        "value": 1
       }
     ],
     "xws": "slavei"
@@ -1657,7 +1660,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Modification"
+        "name": "Modification",
+        "value": 1
       }
     ],
     "xws": "royalguardtie"
@@ -1688,7 +1692,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Elite"
+        "name": "Elite",
+        "value": 1
       }
     ],
     "xws": "awingtestpilot"
@@ -1708,11 +1713,13 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Crew"
+        "name": "Crew",
+        "value": 1
       },
       {
         "type": "slot",
-        "name": "Team"
+        "name": "Team",
+        "value": 1
       }
     ]
   },
@@ -1813,6 +1820,15 @@
         "type": "stats",
         "name": "hull",
         "value": 1
+      },
+      {
+        "type": "slotChoice",
+        "slotChoices": [
+            "Cannon",
+            "Torpedo",
+            "Missile"
+        ],
+        "value": 1
       }
     ]
   },
@@ -1842,11 +1858,13 @@
     "grants": [
       {
         "type": "slot",
-        "name": "System"
+        "name": "System",
+        "value": 1
       },
       {
         "type": "slot",
-        "name": "Illicit"
+        "name": "Illicit",
+        "value": 1
       }
     ],
     "xws": "virago"
@@ -1865,11 +1883,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Bomb"
-      },
-      {
-        "type": "slot",
-        "name": "Bomb"
+        "name": "Bomb",
+        "value": 2
       }
     ],
     "xws": "andrasta"
@@ -1899,7 +1914,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "System"
+        "name": "System",
+        "value": 1
       }
     ],
     "xws": "tiex1"
@@ -2103,7 +2119,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Crew"
+        "name": "Crew",
+        "value": 1
       }
     ],
     "xws": "bwinge2"
@@ -2535,7 +2552,8 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Bomb"
+        "name": "Bomb",
+        "value": 1
       }
     ]
   },
@@ -2550,7 +2568,21 @@
       "TIE Defender"
     ],
     "id": 219,
-    "xws": "tiex7"
+    "xws": "tiex7",
+    "grants": [
+      {
+        "type": "slot",
+        "name": "Cannon",
+        "value": 0,
+        "revoke": true
+      },
+      {
+        "type": "slot",
+        "name": "Missile",
+        "value": 0,
+        "revoke": true
+      }
+    ]
   },
   {
     "image": "upgrades/Title/tie-d.png",
@@ -2578,11 +2610,26 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Crew"
+        "name": "Torpedo",
+        "value": 0,
+        "revoke": true
       },
       {
         "type": "slot",
-        "name": "Crew"
+        "name": "Missile",
+        "value": 0,
+        "revoke": true
+      },
+      {
+        "type": "slot",
+        "name": "Bomb",
+        "value": 0,
+        "revoke": true
+      },
+      {
+        "type": "slot",
+        "name": "Crew",
+        "value": 2
       }
     ]
   },
@@ -2708,7 +2755,14 @@
     "xws": "adaptability",
     "points": 0,
     "slot": "Elite",
-    "id": 232
+    "id": 232,
+    "grants": [
+      {
+        "type": "stats",
+        "name": "skill",
+        "value": -1
+      }
+    ]
   },
   {
     "image": "upgrades/Elite/adaptability-increase.png",
@@ -2717,7 +2771,14 @@
     "xws": "adaptability",
     "points": 0,
     "slot": "Elite",
-    "id": 233
+    "id": 233,
+    "grants": [
+      {
+        "type": "stats",
+        "name": "skill",
+        "value": 1
+      }
+    ]
   },
   {
     "image": "upgrades/System/electronic-baffle.png",
@@ -3051,11 +3112,13 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Crew"
+        "name": "Crew",
+        "value": 1
       },
       {
         "type": "slot",
-        "name": "Illicit"
+        "name": "Illicit",
+        "value": 1
       }
     ]
   },
@@ -3154,7 +3217,14 @@
     "ship": [
       "U-Wing"
     ],
-    "id": 271
+    "id": 271,
+    "grants": [
+      {
+        "type": "stats",
+        "name": "agility",
+        "value": 1
+      }
+    ]
   },
   {
     "image": "upgrades/Title/pivot-wing-landing.png",
@@ -3184,7 +3254,13 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Illicit"
+        "name": "Illicit",
+        "value": 1
+      },
+      {
+        "type": "slot",
+        "name": "Modification",
+        "value": 1
       }
     ]
   },
@@ -3528,11 +3604,18 @@
     "grants": [
       {
         "type": "slot",
-        "name": "Crew"
+        "name": "Crew",
+        "value": 1
       },
       {
         "type": "slot",
-        "name": "Team"
+        "name": "Team",
+        "value": 1
+      },
+      {
+        "type": "slot",
+        "name": "Cargo",
+        "value": -1
       }
     ]
   },
@@ -3546,7 +3629,15 @@
     "ship": [
       "M3-A Interceptor"
     ],
-    "id": 303
+    "id": 303,
+    "grants": [
+      {
+        "type": "slot",
+        "name": "Modification",
+        "value": 0,
+        "revoke": true
+      }
+    ]
   },
   {
     "image": "upgrades/Crew/boshek.png",
@@ -3667,11 +3758,18 @@
     "grants": [
       {
         "type": "slot",
-        "name": "System"
+        "name": "System",
+        "value": 1
       },
       {
         "type": "slot",
-        "name": "Salvaged Astromech"
+        "name": "Salvaged Astromech",
+        "value": 1
+      },
+      {
+        "type": "slot",
+        "name": "Crew",
+        "value": -1
       }
     ],
     "id": 313
