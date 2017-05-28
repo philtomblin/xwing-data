@@ -179,7 +179,7 @@
                 "type": "integer",
                 "description": "The number of choices that can be selected."
               },
-              "choice": {
+              "slotChoices": {
                 "type": "array",
                 "description": "The list of slot choices.",
                 "uniqueItems": false,
@@ -191,7 +191,7 @@
             },
             "required": [
               "value",
-              "choice",
+              "slotChoices",
               "type"
             ],
             "additionalProperties": false
