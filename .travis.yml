@@ -3,7 +3,7 @@ node_js:
 - '6'
 deploy:
   provider: npm
-  email: $NPM_EMAIL
+  email: guidokessels@gmail.com
   api_key:
     secure: $NPM_TOKEN
   on:
